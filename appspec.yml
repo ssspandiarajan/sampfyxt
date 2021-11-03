@@ -4,6 +4,7 @@ files:
   - source: /
     destination: /var/www/html
 hooks:
-  AfterInstall:
+  ApplicationStart:
     - location: /var/www/html/exe.sh
       timeout: 180
+      runas: root
